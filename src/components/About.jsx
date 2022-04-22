@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import AppWrap from '../wrapper/AppWrap'
+import MotionWrap from '../wrapper/MotionWrap'
 import { images } from '../constants'
 import "./About.scss"
 
@@ -26,8 +27,8 @@ const About = () => {
             key={about.title + index}
           >
             <img src={about.imgUrl} alt={about.title} />
-            <h2 className='bold-text' style={{ margintop: 20 }}>{about.title}</h2>
-            <p className='p-text' style={{ margintop: 10 }}>{about.description}</p>
+            <h2 className='bold-text' style={{ marginTop: 20 }}>{about.title}</h2>
+            <p className='p-text' style={{ marginTop: 10 }}>{about.description}</p>
           </motion.div>
         ))}
       </div>
@@ -35,4 +36,8 @@ const About = () => {
   )
 }
 
-export default AppWrap(About, 'about');
+export default AppWrap(
+  MotionWrap(About, 'app__about'),
+  'about',
+  "app__whitebg"
+);
