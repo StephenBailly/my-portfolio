@@ -1,13 +1,15 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react';
 import { images } from '../constants'
 import AppWrap from '../wrapper/AppWrap'
 import MotionWrap from '../wrapper/MotionWrap'
+import emailjs from 'emailjs-com';
 import "./Footer.scss"
 
-const Footer = () => {
+export const Footer = () => {
+  const form = useRef();
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
   const { name, email, message } = formData;
 
@@ -17,22 +19,20 @@ const Footer = () => {
     setFormData({ ...formData, [name]: value });
   }
 
-  const handleSubmit = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
     setLoading(true);
 
-    const contact = {
-      _type: 'contact',
-      name: name,
-      email: email,
-      message: message
-    }
+    emailjs.sendForm('service_i0g918q', 'template_lkk2e7u', form.current, 'user_EAD6PCPyiRjSkQ2LSqquB')
+      .then((result) => {
+        console.log(result.text);
+        setLoading(false);
+        setIsFormSubmitted(true);
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
 
-    // client.create(contact)
-    //   .then(() => {
-    //     setLoading(false);
-    //     setIsFormSubmitted(true);
-    //   })
-  }
 
   return (
     <>
@@ -49,21 +49,22 @@ const Footer = () => {
         </div>
       </div>
       {!isFormSubmitted ?
-      <div className="app__footer-form app__flex">
-      <div className="app__flex">
-        <input type="text" className="p-text" placeholder="Your Name" name ="name" value={name}  onChange={handleChangeInput} />
-      </div>
-      <div className="app__flex">
-        <input type="email" className="p-text" placeholder="Your Email" name ="email" value={email}  onChange={handleChangeInput} />
-      </div>
-      <div>
-        <textarea className='p-text' placeholder='Your Message' value={message} name='message' onChange={handleChangeInput} />
-      </div>
-      <button type="button" className='p-text' onClick={handleSubmit}>{loading ? 'Sending' : 'Send Message'}</button>
-      </div>
-      : <div><h3 className='head-text'>Thank you for getting in touch!</h3></div>}
+        // <form ref={form} onSubmit={sendEmail}>
+          <form className="app__footer-form app__flex" ref={form}>
+            <div className="app__flex">
+              <input type="text" className="p-text" placeholder="Your Name" name="name" value={name} onChange={handleChangeInput} />
+            </div>
+            <div className="app__flex">
+              <input type="email" className="p-text" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
+            </div>
+            <div>
+              <textarea className='p-text' placeholder='Your Message' value={message} name='message' onChange={handleChangeInput} />
+            </div>
+            <button type="button" className='p-text' onClick={sendEmail}>{loading ? 'Sending' : 'Send Message'}</button>
+          </form> 
+        : <div><h3 className='head-text'>Thank you for getting in touch!</h3></div>}
     </>
-  )
+  );
 }
 
 export default AppWrap(

@@ -54,6 +54,7 @@
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
+    margin-top: 5rem;
 
     .badge-cmp, .tag-cmp {
         padding: 1rem 2rem;
@@ -67,6 +68,7 @@
     .tag-cmp {
         flex-direction: column;
         margin-top: 3rem;
+        margin-right: 5rem;
 
         p {
             width: 100%;
@@ -84,8 +86,8 @@
     }
 
     @media screen and (max-width: 1200px) {
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
     }
 }
 
