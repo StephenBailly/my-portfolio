@@ -9,7 +9,7 @@ const abouts = [
   { title: "Web Development", description: "Learnt it from Wild Code School", imgUrl: images.about01},
   { title: "Frontend Development", description: "React.js / CSS / Javascript", imgUrl: images.about02},
   { title: "Backend Development", description: "Node.js / Express / MySQL", imgUrl: images.about03},
-  { title: "UX/UI Designer", description: "I am a good web developer", imgUrl: images.about04}
+  { title: "UX/UI Designer", description: "Accessibility is the idea", imgUrl: images.about04}
 ]
 
 const About = () => {
