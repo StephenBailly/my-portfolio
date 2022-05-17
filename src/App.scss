@@ -110,6 +110,13 @@
         color: var(--gray-color);
         margin-top: 0.25rem;
       }
+
+      img {
+        width: 30px;
+        height: 30px;
+        filter: invert(50%) sepia(22%) saturate(311%) hue-rotate(178deg) brightness(88%) contrast(90%);
+        margin-top: 0.25rem;
+      }
   
       &:hover {
         background-color: var(--secondary-color);
@@ -117,6 +124,10 @@
   
         svg {
           color: var(--white-color);
+        }
+
+        img {
+          filter: grayscale(0);
         }
       }
   

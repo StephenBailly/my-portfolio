@@ -11,6 +11,8 @@ const Work = () => {
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   const [filterWork, setFilterWork] = useState([]);
 
+  console.log(activeFilter)
+
   useEffect(() => {
     
     return () => {
@@ -18,8 +20,6 @@ const Work = () => {
     }
   }, [])
   
-
-
   const handleWorkFilter = (item) => {
     setActiveFilter(item);
     setAnimateCard([{ y:100, opacity:0 }]);
@@ -37,14 +37,14 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="head-text">My Creative <span>Portfolio </span>Section</h2>
+      <h2 className="head-text">My <span>Portfolio </span>Section</h2>
 
       <div className="app__work-filter">
         {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
-            className={`app__work-filter-item app__flex p-text ${activeFilter === item ? "item-active" : " "}`}
+            className={`app__work-filter-item app__flex p-text ${activeFilter === item ? "item-active" : "All"}`}
           >
             {item}
           </div>

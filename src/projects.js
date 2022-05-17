@@ -1,26 +1,28 @@
+import { images } from './constants';
+
 const projects = [{
-    title: "Modern UI/UX Website",
-    description: "A modern UI/UX Protfolio Website",
-    link: "https://github.com/StephenBailly",
-    codeLink: "https://github.com/StephenBailly/my-portfolio",
-    imgUrl: "https://cdn.pixabay.com/photo/2020/04/04/03/42/youtube-5000699_960_720.png",
-    tag: ["UI/UX", "All"]
+    title: "Elfenn Cosmétiques",
+    description: "Modern E-commerce Website for a New Cosmetic brand",
+    link: "http://elfenncosmetiques.fr/",
+    codeLink: "https://github.com/StephenBailly/",
+    imgUrl: `${images.elfennSite}`,
+    tag: ["React JS", "All"]
 },
 {
-    title: "Gericht Restaurant",
-    description: "A modern UI/UX",
-    link: "blank",
-    codeLink: "blank",
-    imgUrl: "https://cdn.pixabay.com/photo/2018/07/14/15/27/cafe-3537801_960_720.jpg",
-    tag: ["UI/UX", "All"]
+    title: "Spered",
+    description: "London Based Compliance Advisor Portfolio",
+    link: "https://626ab0ee33b86c298a60639c--ubiquitous-babka-e715f8.netlify.app/",
+    codeLink: "https://github.com/StephenBailly/dung-portfolio",
+    imgUrl: `${images.speredSite}`,
+    tag: ["React JS", "All"]
 },
 {
-    title: "Cool Mobile App",
-    description: "Tinder Clone in React.js",
-    link: "blank",
-    codeLink: "blank",
-    imgUrl: "https://cdn.pixabay.com/photo/2020/07/15/22/07/tinder-home-page-5409106_960_720.jpg",
-    tag: ["Mobile App", "All"]
+    title: "Risq Enedis",
+    description: "Project Hackathon Enedis Centre-Loire",
+    link: "https://626f793b17e90a67fd91b34f--admirable-treacle-95f3c4.netlify.app/",
+    codeLink: "https://github.com/StephenBailly/hackathon",
+    imgUrl: `${images.risq}`,
+    tag: ["Web App", "React JS", "All"]
 }
 ]
 

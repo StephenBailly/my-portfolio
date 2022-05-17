@@ -35,6 +35,12 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
+import spered from "../assets/spered.png"
+import elfennLogo from "../assets/Logo Elfenn cosmétiques.png"
+import speredSite from "../assets/SperedSite.png"
+import elfennSite from "../assets/Elfenn.png"
+import risq from "../assets/Risq.png"
+import maltLogo from "../assets/maltLogo.png"
 
 export default {
   email,
@@ -70,5 +76,11 @@ export default {
   skype,
   spotify,
   stephen_crop_no_bg,
-  FC
+  FC,
+  spered,
+  elfennLogo,
+  speredSite,
+  elfennSite,
+  risq,
+  maltLogo
 };
