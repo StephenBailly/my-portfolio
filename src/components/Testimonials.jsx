@@ -6,14 +6,16 @@ import MotionWrap from '../wrapper/MotionWrap'
 import { images } from '../constants'
 import "./Testimonials.scss"
 
-const testimonials = [
-  { name: "Nia Nacci", company: "Spotify", desc: "Stephen has the biggest cock I've ever seen", img: "https://www.trendycow.net/wp-content/uploads/2021/11/Nia-Nacci_2.jpg" },
-  { name: "Frantzline Civil", company: "Amazon", desc: "Li gen yon gwo zozo", img: `${images.FC}` }
-]
+const testimonials = []
+  // { name: "Dzung Le", company: "Spered", desc: "", img: "" },
+  // { name: "Agathe Le Bouëdec", company: "Elfenn Cosmétiques", desc: "", img: "" }
+  
+
 
 const brands = [
-  { name: "Spotify", img: `${images.spotify}`},
-  { name: "Amazon", img: `${images.amazon}`}
+  { name: "Spered", img: `${images.spered}`},
+  { name: "Elfenn Cosmétiques", img: `${images.elfennLogo}`}
+  
 ]
 
 const Testimonials = () => {

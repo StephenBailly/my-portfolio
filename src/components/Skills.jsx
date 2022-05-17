@@ -16,7 +16,7 @@ const skills = [
 
 const experience = [
   { year: "2022", name: "Full stack Developer", company: "Elfenn Cosmétiques", description: "Full e-commerce website for a new cosmetic brand" },
-  { year: "2022", name: "Front-end Developer", company: "Dung Le Huong", description: "Business website for Compliance and Operation Advisor"}
+  { year: "2022", name: "Front-end Developer", company: "Spered", description: "Business website for Compliance and Operation Advisor"}
 ]
 
 const Skills = () => {
