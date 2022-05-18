@@ -15,6 +15,7 @@ const skills = [
 ]
 
 const experience = [
+  { year: "2021", name: "Web Dev Student", company: "Wild Code School", description: "Back to school to learn the FullStack Dev way on React.js/Node.js"},
   { year: "2022", name: "Full stack Developer", company: "Elfenn Cosmétiques", description: "Full e-commerce website for a new cosmetic brand" },
   { year: "2022", name: "Front-end Developer", company: "Spered", description: "Business website for Compliance and Operation Advisor"}
 ]
@@ -22,7 +23,7 @@ const experience = [
 const Skills = () => {
   return (
     <>
-      <h2 className="head-text">Skills & Experience</h2>
+      <h2 className="head-text">Skills & <span>Experience</span></h2>
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">

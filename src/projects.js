@@ -6,7 +6,7 @@ const projects = [{
     link: "http://elfenncosmetiques.fr/",
     codeLink: "https://github.com/StephenBailly/",
     imgUrl: `${images.elfennSite}`,
-    tag: ["React JS", "All"]
+    tag: ["FullStack", "React.js", "All"]
 },
 {
     title: "Spered",
@@ -14,7 +14,7 @@ const projects = [{
     link: "https://626ab0ee33b86c298a60639c--ubiquitous-babka-e715f8.netlify.app/",
     codeLink: "https://github.com/StephenBailly/dung-portfolio",
     imgUrl: `${images.speredSite}`,
-    tag: ["React JS", "All"]
+    tag: ["React.js", "All"]
 },
 {
     title: "Risq Enedis",
@@ -22,7 +22,7 @@ const projects = [{
     link: "https://626f793b17e90a67fd91b34f--admirable-treacle-95f3c4.netlify.app/",
     codeLink: "https://github.com/StephenBailly/hackathon",
     imgUrl: `${images.risq}`,
-    tag: ["Web App", "React JS", "All"]
+    tag: ["Web App", "React.js", "All"]
 }
 ]
 
