@@ -41,7 +41,7 @@ export const Footer = () => {
       <div className='app__footer-cards'>
         <div className="app__footer-card">
           <img src={images.email} alt="email" />
-          <a href="mailto:stephen.bailly@gmail.com" className='p-text'>stephen.bailly@gmail.com</a>
+          <a href="mailto:stephen.bailly@gmail.com" className='p-text'>contact@stephenbailly.com</a>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="mobile" />
