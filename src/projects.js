@@ -11,7 +11,7 @@ const projects = [{
 {
     title: "Spered",
     description: "London Based Compliance Advisor Portfolio",
-    link: "https://626ab0ee33b86c298a60639c--ubiquitous-babka-e715f8.netlify.app/",
+    link: "https://629774780b5fff00b02ea784--ubiquitous-babka-e715f8.netlify.app/",
     codeLink: "https://github.com/StephenBailly/dung-portfolio",
     imgUrl: `${images.speredSite}`,
     tag: ["React.js", "All"]

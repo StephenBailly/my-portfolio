@@ -33,7 +33,6 @@ export const Footer = () => {
       });
   };
 
-
   return (
     <>
       <h2 className="head-text">Take a Coffee & Chat With Me</h2>

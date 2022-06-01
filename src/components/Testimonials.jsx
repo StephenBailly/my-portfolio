@@ -6,11 +6,10 @@ import MotionWrap from '../wrapper/MotionWrap'
 import { images } from '../constants'
 import "./Testimonials.scss"
 
-const testimonials = []
-  // { name: "Dzung Le", company: "Spered", desc: "", img: "" },
-  // { name: "Agathe Le Bouëdec", company: "Elfenn Cosmétiques", desc: "", img: "" }
-  
-
+const testimonials = [
+  // { name: "Dzung Le Huong", company: "Spered", desc: "", img: "" },
+  // { name: "Agathe Le Bouëdec", company: "Elfenn Cosmétiques", desc: "", img: "" } 
+]
 
 const brands = [
   { name: "Spered", img: `${images.spered}`},
